@@ -1,14 +1,32 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 <head>
+<style>
+fieldset {
+  background-color: #eeeeee;
+}
+
+legend {
+  background-color: gray;
+  color: white;
+  padding: 5px 10px;
+}
+
+input {
+  margin: 5px;
+}
+</style>
    
 </head>
-<body> 
-<h4>personal detils</h4>
+<body>
+<fieldset>
+<legend> 
+<h4>personal detils</h4></legend>
 
 	<div class="container">
     <label for="uname"><b>Username</b></label>
     <input type="text"  name="uname" required>
+    
     
     <br>
 
@@ -28,8 +46,10 @@
     <h5>Gender: 
 <input type="radio" name="sex" value="male" /> male
 <input type="radio" name="sex" value="female" />femal </form>  </h5>
+</fieldset>
 <br>
-<h4>Magazines</h4>
+<fieldset>
+<legend><h4>Magazines</h4></legend>
     
     <form>
          <input type = "checkbox" name = "Stavanger Aftenblad" value = "on"> stavanger aftenblad
@@ -40,9 +60,11 @@
             <br>
                <input type = "checkbox" name = "familier" value = "on"> familier
       </form>
+      </fieldset>
        
       <br>
-      <h4>Subscription</h4>
+      <fieldset>
+     <legend> <h4>Subscription</h4></legend>
       <h5>period:<select name = "dropdown">
             <option value = "6 month" selected>6 month</option> 
             <option value = "12 month" selected>12 month</option> 
@@ -50,6 +72,7 @@
             
            </h5>
            </select>
+           </fieldset>
 
  
 </form>
